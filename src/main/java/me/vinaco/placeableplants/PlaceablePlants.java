@@ -33,6 +33,9 @@ public final class PlaceablePlants extends JavaPlugin implements Listener {
     @EventHandler
     public void onPlant(PlayerInteractEvent e) {
         Player p = e.getPlayer();
+        if (e.getItem() == null){
+            return;
+        }
         if (e.getAction() != Action.RIGHT_CLICK_BLOCK) {
             return;
         }
@@ -101,12 +104,9 @@ public final class PlaceablePlants extends JavaPlugin implements Listener {
             //adds plant to array list if true in config.yml
             if (getConfig().getBoolean("plants." + plant)){
                 plantsList.add(plant);
-                System.out.println("added plant: " + plant);
+                //System.out.println("added plant: " + plant);
             }
         });
-        for (String i : plantsList){
-            Bukkit.getLogger().info(i);
-        }
 
 
         crops.add("WHEAT_SEEDS");
@@ -130,7 +130,6 @@ public final class PlaceablePlants extends JavaPlugin implements Listener {
         tall.add("LILAC");
         tall.add("ROSE_BUSH");
         tall.add("PEONY");
-        tall.add("BIG_DRIPLEAF");
 
     }
 
