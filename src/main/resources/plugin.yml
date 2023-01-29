@@ -1,0 +1,6 @@
+name: PlaceablePlants
+version: '${project.version}'
+main: me.vinaco.placeableplants.PlaceablePlants
+api-version: 1.19
+authors: [ Vinaco ]
+description: Makes plants placeable on any flat surface

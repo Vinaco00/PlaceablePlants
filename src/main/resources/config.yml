@@ -1,0 +1,52 @@
+plants:
+  FERN: true
+  GRASS: true
+  DEAD_BUSH: true
+  SWEET_BERRIES: true
+  BROWN_MUSHROOM: true
+  RED_MUSHROOM: true
+  DANDELION: true
+  POPPY: true
+  BLUE_ORCHID: true
+  ALLIUM: true
+  AZURE_BLUET: true
+  RED_TULIP: true
+  ORANGE_TULIP: true
+  WHITE_TULIP: true
+  PINK_TULIP: true
+  OXEYE_DAISY: true
+  CORNFLOWER: true
+  LILY_OF_THE_VALLEY: true
+  WITHER_ROSE: true
+  CRIMSON_ROOTS: true
+  WARPED_ROOTS: true
+  NETHER_SPROUTS: true
+  CRIMSON_FUNGUS: true
+  WARPED_FUNGUS: true
+  LARGE_FERN: true
+  TALL_GRASS: true
+  SUNFLOWER: true
+  LILAC: true
+  ROSE_BUSH: true
+  PEONY: true
+  OAK_SAPLING: true
+  BIRCH_SAPLING: true
+  SPRUCE_SAPLING: true
+  JUNGLE_SAPLING: true
+  ACACIA_SAPLING: true
+  DARK_OAK_SAPLING: true
+  MANGROVE_PROPAGULE: true
+  BIG_DRIPLEAF: true
+  SMALL_DRIPLEAF: true
+  WHEAT_SEEDS: true
+  BEETROOT_SEEDS: true
+  POTATO: true
+  CARROT: true
+  NETHER_WART: true
+  SUGAR_CANE: true
+  LILY_PAD: true
+options:
+  # When True, allows plants to be placed on the side of blocks even when floating in the air
+  allowAirPlacement: false
+  # When true, plants will only be placed on full blocks. When false, plants can be placed on any block (stairs, slabs, fences, etc.)
+  fullBlocksOnly: false
