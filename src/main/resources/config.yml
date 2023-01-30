@@ -45,8 +45,15 @@ plants:
   NETHER_WART: true
   SUGAR_CANE: true
   LILY_PAD: true
+  BAMBOO: true
 options:
   # When True, allows plants to be placed on the side of blocks even when floating in the air
   allowAirPlacement: false
   # When true, plants will only be placed on full blocks. When false, plants can be placed on any block (stairs, slabs, fences, etc.)
   fullBlocksOnly: false
+  # When true, sapplings placed on blocks other than dirt or moss will not grow into trees. (Note: When false, the block below a sapling will change into dirt on growth)
+  suppressTreeGrowth: true
+  # When true, sugar cane will only grow on sand or dirt next to water. (Note: Sugar cane will break on growth if not on a standard block)
+  suppressSugarcaneGrowth: true
+  # When true, Bamboo will only grow on its standard blocks. (Note: Bamboo will break on growth if not on a standard block)
+  suppressBambooGrowth: true
