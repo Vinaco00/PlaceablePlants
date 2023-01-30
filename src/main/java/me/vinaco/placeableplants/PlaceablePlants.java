@@ -28,6 +28,7 @@ public final class PlaceablePlants extends JavaPlugin implements Listener {
     ArrayList<String> tall = new ArrayList<>();
     ArrayList<String> sugarCaneBlocks;
     ArrayList<String> bambooBlocks;
+    ArrayList<String> saplings = new ArrayList<>();
 
     @Override
     public void onEnable() {
@@ -188,6 +189,9 @@ public final class PlaceablePlants extends JavaPlugin implements Listener {
         if (!getConfig().getBoolean("options.suppressTreeGrowth")) {
             return;
         }
+        if (!saplings.contains(e.getLocation().getBlock().getType().toString())){
+            return;
+        }
         if (!dirts.contains(e.getLocation().getBlock().getRelative(0, -1, 0).getType().toString())) {
             e.setCancelled(true);
         }
@@ -241,6 +245,16 @@ public final class PlaceablePlants extends JavaPlugin implements Listener {
 
         bambooBlocks = (ArrayList<String>) sugarCaneBlocks.clone();
         bambooBlocks.add("GRAVEL");
+
+        saplings.add("OAK_SAPLING");
+        saplings.add("SPRUCE_SAPLING");
+        saplings.add("BIRCH_SAPLING");
+        saplings.add("ACACIA_SAPLING");
+        saplings.add("DARK_OAK_SAPLING");
+        saplings.add("JUNGLE_SAPLING");
+        saplings.add("MANGROVE_PROPAGULE");
+
+
 
     }
 
