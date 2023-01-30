@@ -46,7 +46,7 @@ public final class PlaceablePlants extends JavaPlugin implements Listener {
         if (e.getAction() != Action.RIGHT_CLICK_BLOCK) {
             return;
         }
-        p.sendMessage(e.getItem().getType().toString());
+        //p.sendMessage(e.getItem().getType().toString());
         if (plantsList.contains(e.getItem().getType().toString())) {
             BlockFace face = getBlockFace(p);
             if (face == null){
